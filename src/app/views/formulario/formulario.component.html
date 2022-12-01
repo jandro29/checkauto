@@ -1,36 +1,44 @@
-<section class="mt-20">
+<section>
   <div class="flex justify-center">
-    <div class="w-[75%] bg-[#FFFFFF]" style=" border-radius: 20px;">
-      <div>
-        <p
-          style="height:  87px; width: 100%; display: flex; align-items: center; background: #FFFFFF; justify-content: center; border-radius: 20px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);" >
+    <div class="2xl:w-[60%] xl:w-[85%] lg:w-[80%] w-[100%] bg-[#FFFFFF]" style=" border-radius: 20px;">
+      <div class="hidden lg:block">
+        <p class="InterBold 2xl:text-[32px] xl:text-[26px] lg:text-[20px] xl:h-[87px] lg:h-[60px]"
+          style="color: #00239B; width: 100%; display: flex; align-items: center; background: #FFFFFF; justify-content: center; border-radius: 20px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);" >
           ¿Quiere vender tu auto?</p>
       </div>
 
-      <div class="flex flex-col">
 
-        <div class="flex justify-center mt-[11px]">
-          <div class=" w-[75%] text-[18px]">
+      <div class="lg:hidden block">
+        <p class="InterBold mt-24 text-[21px]"
+          style="color: #00239B; width: 100%; display: flex; align-items: center;; justify-content: center; border-radius: 20px;" >
+          ¿Quiere vender tu auto?</p>
+      </div>
+      <div class="InterMedium flex flex-col ">
+
+        <div class="flex justify-center xl:mt-[15px] lg:mt-[10px] mt-[10px]">
+          <div class="2xl:w-[60%] xl:w-[75%] lg:w-[80%] w-[60%] xl:text-[18px] lg:text-[15px] text-[13px] text-[#414141] ">
             <p>Llena aquí tus datos, verifícalo con nosotros y ofrécelo a  precio de mercado.</p>
           </div>
         </div>
 
         <div class="flex justify-center mt-[11px]">
-          <div class=" w-[75%] text-[12.5px] text-[#757F89]">
-            <p>* Para un llenado efectivo recomendamos tener tu Tarjeta de Propiedad a la mano</p>
+          <div class=" 2xl:w-[60%] xl:w-[75%] lg:w-[80%] w-[60%] xl:text-[12.5px] lg:text-[9.5px] text-[12.5px] text-[#757F89]">
+            <span><em>* Para un llenado efectivo recomendamos tener tu Tarjeta de Propiedad a la mano</em></span>
           </div>
         </div>
       </div>
 
-      <div class="mt-10">
+      <div class="InterMedium 2xl:mt-10 xl:mt-4 lg:mt-4 mt-5">
         <form>
-          <div class="flex flex-wrap justify-center space-x-5">
-            <div class="flex justify-center space-x-16"  style="width: 100%;">
-              <mat-form-field style="width: 30%;">
-                <mat-label>Marca</mat-label>
+          <div class="flex flex-wrap justify-center xl:space-x-5 lg:space-x-2">
+            <div class="flex justify-center space-x-6"  style="width: 100%;">
+              <mat-form-field appearance="fill" class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%] ">
+                <mat-label >Marca</mat-label>
                 <input matInput placeholder="Marca" value="">
               </mat-form-field>
-              <mat-form-field style="width: 30%;">
+
+
+              <mat-form-field appearance="fill" class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]">
                 <mat-label>Modelo</mat-label>
                 <input matInput placeholder="Modelo" value="">
               </mat-form-field>
@@ -39,8 +47,8 @@
 
           <div class="flex flex-wrap justify-center" style="width: 100%;">
             <div class="flex justify-center" style="width: 100%;">
-              <form style="width: 70%;">
-                <mat-form-field style="width: 100%;">
+              <form class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+                <mat-form-field appearance="fill" style="width: 100%;">
                   <mat-label>Versión</mat-label>
                   <input matInput placeholder="Versión">
                 </mat-form-field>
@@ -49,12 +57,12 @@
           </div>
 
           <div class="flex flex-wrap justify-center">
-            <div class="flex justify-center space-x-16"  style="width: 100%;">
-              <mat-form-field style="width: 30%;">
+            <div class="flex justify-center space-x-6"  style="width: 100%;">
+              <mat-form-field appearance="fill" class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]">
                 <mat-label>Año de fabricación</mat-label>
                 <input matInput placeholder="Año de fabricacion" value="">
               </mat-form-field>
-              <mat-form-field style="width: 30%;">
+              <mat-form-field appearance="fill" class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]">
                 <mat-label>Kilometraje</mat-label>
                 <input matInput placeholder="Kilometraje" value="">
               </mat-form-field>
@@ -63,8 +71,8 @@
 
           <div class="flex flex-wrap justify-center" style="width: 100%;">
             <div class="flex justify-center" style="width: 100%;">
-              <form style="width: 70%;">
-                <mat-form-field style="width: 100%;">
+              <form  class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+                <mat-form-field appearance="fill" style="width: 100%;">
                   <mat-label>E-mail</mat-label>
                   <input matInput placeholder="checkauto@example.com">
                 </mat-form-field>
@@ -74,8 +82,8 @@
 
           <div class="flex flex-wrap justify-center" style="width: 100%;">
             <div class="flex justify-center" style="width: 100%;">
-              <form style="width: 70%;">
-                <mat-form-field style="width: 100%;">
+              <form class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+                <mat-form-field  appearance="fill" style="width: 100%;">
                   <mat-label>Celular</mat-label>
                   <input matInput placeholder="Celular">
                 </mat-form-field>
@@ -83,8 +91,8 @@
             </div>
           </div>
 
-          <div class="flex justify-center mb-14 ">
-            <button style="width: 70%; height: 60px; background: #001662; border-radius: 10px;" mat-flat-button color="primary">Enviar</button>
+          <div class="flex justify-center xl:mb-14 lg:mb-8 ">
+            <button style="width: 63%; height: 60px; background: #001662; border-radius: 10px;" mat-flat-button color="primary">Enviar</button>
           </div>
         </form>
       </div>

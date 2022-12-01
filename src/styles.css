@@ -4,3 +4,32 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@font-face{
+  font-family: InterBold;
+  src: url(assets/font/Inter-Bold.ttf);
+}
+
+
+@font-face{
+  font-family: InterMedium;
+  src: url(assets/font/Inter-Medium.ttf);
+}
+
+@font-face{
+  font-family: InterLight;
+  src: url(assets/font/Inter-Light.ttf);
+}
+
+.InterBold{
+  font-family: InterBold;
+}
+
+.InterMedium{
+  font-family: InterMedium;
+}
+
+.InterLight{
+  font-family: InterLight;
+}

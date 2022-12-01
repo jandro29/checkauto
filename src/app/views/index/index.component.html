@@ -1,27 +1,523 @@
-<section style="width: 100%;">
-  <img style="width: 100%; z-index: 2; position: static;" src="assets/img/ImgDeInicio.svg" alt="">
-
+<section style="width: 100%;" class="block lg:hidden">
+  <img class="" style="width: 100%; object-fit: cover; z-index: 2; position: static;"
+    src="assets/img/img-inicioresp.svg" alt="">
 </section>
 
-<section class="mt-40" style="top: 0; position: absolute; z-index: 3; width: 100%; height: 100%;">
+<section style="width: 100%;" class="lg:block hidden">
+  <img class="" style="width: 100%; object-fit: cover; z-index: 2; position: static;" src="assets/img/firstimghome.jpg"
+    alt="">
+</section>
 
+<section class="2xl:mt-40 xl:mt-10 lg:mt-8 mt-8"
+  style="top: 0; position: absolute; z-index: 3; width: 100%; height: 100%;">
+  <div class="flex justify-center lg:justify-between">
+    <div class="flex flex-col w-[85%] lg:w-[40%] xl:w-[50%]">
+      <div class="w-[100%]">
+        <div class="flex justify-center">
+          <div class="flex flex-col">
+            <i><img src="assets/img/LogoCheckAuto.png" alt=""></i>
+            <p
+              class="InterBold lg:mt-[164px] mt-10 text-white 2xl:w-[661px] xl:w-[540px] lg:w-[340px] 2xl:text-[34px] xl:text-[30px] lg:text-[25px] flex justify-center">
+              Colocamos autos
+              seminuevos de propietarios, los
+              verificamos y
+              conectamos con compradores.</p>
 
-  <div class="flex justify-between">
-    <div class="flex flex-col w-[50%]">
-      <div class="ml-[138px] mt-[40px]">
-        <img src="assets/img/LogoCheckAuto.png" alt="">
+            <div class="InterLight lg:hidden block w-[260px] text-white text-[12.5px] mt-3.5">
+              <p>Ofrecemos un acuerdo justo en precio y tiempo entre el propietario y el comprador, en la compra - venta
+                de autos seminuevos y usados verificados.</p>
+
+            </div>
+
+          </div>
+        </div>
       </div>
-
-      <p class=" ml-[138px] mt-[164px] text-white w-[80%] text-[34px]">Colocamos autos seminuevos de propietarios, los verificamos y
-        conectamos con compradores.</p>
     </div>
-
-    <div class="w-[50%]">
+    <div class="hidden lg:block w-[50%] flex justify-center">
       <app-formulario></app-formulario>
     </div>
   </div>
-
   <div>
+  </div>
+</section>
+<section>
 
+  <div class="lg:hidden block  w-[100%]">
+    <app-formulario></app-formulario>
+  </div>
+
+  <div class="child-cont 2xl:mt-32 xl:mt-20 xl:ml-32 lg:ml-20 lg:block hidden">
+    <div class="text-[#DFE7FF] lg:text-[118px] ">
+      <p class="InterBold">Beneficios</p>
+    </div>
+    <div class="InterLight flex justify-end xl:mr-36 lg:mr-20 text-[28px]">
+      <p class=" xl:w-[751px] lg:w-[550px]">Verifica tu auto con Checkauto y oferta de forma inmediata a precio de
+        mercado.
+      </p>
+    </div>
+  </div>
+
+  <div class="child-cont mt-36 block lg:hidden">
+    <div class=" flex justify-center text-[#DFE7FF] text-[51px] ">
+      <p class="InterBold">Beneficios</p>
+    </div>
+    <div class="InterLight flex justify-center text-[15px]">
+      <p class="w-[246px]">Verifica tu auto con Checkauto y oferta de forma inmediata a precio de
+        mercado.
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="InterLight flex-col lg:block hidden">
+    <div class="mt-20 ">
+      <div class="flex justify-center">
+        <div class="flex flex-wrap lg:space-x-8 xl:space-x-20">
+          <div class="cont-box relative xl:w-[334px] lg:w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/primera-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/primera-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="xl:w-[242px] lg:w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9">Obtén una oferta justa por tu
+                auto</p>
+            </div>
+          </div>
+          <div class="cont-box relative  xl:w-[334px] lg:w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/segunda-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/segunda-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="xl:w-[242px] lg:w-[200px] mt-5 xl:text-[20px] l:text-[15px] ml-9"><span><b>Diagnóstico
+                    Checkauto:</b></span>
+                Validamos el buen estado y uso de tu auto</p>
+            </div>
+          </div>
+          <div class="cont-box relative xl:w-[334px] lg:w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/tercera-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/tercera-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="xl:w-[242px] lg:w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9">Fotos profesionales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-20">
+      <div class="flex justify-center">
+        <div class="flex flex-wrap lg:space-x-8 xl:space-x-20">
+          <div class="cont-box relative xl:w-[334px] lg:w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/cuarta-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/cuarta-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="xl:w-[242px] lg:w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9"><span><b>Mayor
+                    alcance:</b></span> Publicaciones en redes
+                sociales y plataformas de venta</p>
+            </div>
+          </div>
+          <div class="cont-box relative xl:w-[334px] lg:w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/quinta-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/quinta-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="xl:w-[242px] lg:w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9">Coordinamos con potenciales
+                compradores y atendemos citas
+                donde tú elijas</p>
+            </div>
+          </div>
+          <div class="cont-box relative w-[334px] h-[224px] mb-20">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9 "><img src="assets/img/img-cuadros/sexta-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/sexta-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="xl:w-[242px] lg:w-[200px] mt-5 xl:text-[20px] g:text-[15px] ml-9"><span><b>Trámites
+                    Fit:</b></span> Trámite y transacción
+                vehicular en Notaria, en menos de una hora</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="InterLight flex-col block lg:hidden">
+    <div class="mt-20 ">
+      <div class="flex justify-center">
+        <div class="flex flex-col  space-y-5 justify-center">
+          <div class="cont-box relative w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/primera-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/primera-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9">Obtén una oferta justa por tu
+                auto</p>
+            </div>
+          </div>
+          <div class="cont-box relative w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/segunda-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/segunda-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="w-[200px] mt-5 xl:text-[20px] l:text-[15px] ml-9"><span><b>Diagnóstico
+                    Checkauto:</b></span>
+                Validamos el buen estado y uso de tu auto</p>
+            </div>
+          </div>
+          <div class="cont-box relative w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/tercera-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/tercera-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9">Fotos profesionales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <div class="flex justify-center">
+        <div class="flex flex-col  space-y-5 justify-center">
+          <div class="cont-box relative w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/cuarta-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/cuarta-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9"><span><b>Mayor
+                    alcance:</b></span> Publicaciones en redes
+                sociales y plataformas de venta</p>
+            </div>
+          </div>
+          <div class="cont-box relative w-[290px] h-[224px]">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9"><img src="assets/img/img-cuadros/quinta-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/quinta-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="w-[200px] mt-5 xl:text-[20px] lg:text-[15px] ml-9">Coordinamos con potenciales
+                compradores y atendemos citas
+                donde tú elijas</p>
+            </div>
+          </div>
+          <div class="cont-box relative w-[290px] h-[224px] mb-20">
+            <div class="flex flex-col ">
+              <i class="w-[44px] mt-9 "><img src="assets/img/img-cuadros/sexta-img.svg" class="flex ml-9" alt=""></i>
+              <div class="aboslute img-change w-[100%] h-[100%]" style="border-radius: 25px;">
+                <i class="w-[100%] h-[100%] absolute img-change flex justify-start" style="border-radius: 25px;"><img
+                    class="absolute mt-9 w-[44px] flex ml-9" src="assets/img/img-cuadros/sexta-img-white.svg"
+                    alt=""></i>
+              </div>
+              <p class="w-[200px] mt-5 xl:text-[20px] g:text-[15px] ml-9"><span><b>Trámites
+                    Fit:</b></span> Trámite y transacción
+                vehicular en Notaria, en menos de una hora</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="relative">
+  <section class="lg:block hidden" style="width: 100%;">
+    <img style="width: 100%; z-index: 2; position: static;" src="assets/img/segunda-img.svg" alt="">
+  </section>
+
+  <section class="block lg:hidden" style="width: 100%;">
+    <img style="width: 100%; z-index: 2; position: static;" src="assets/img/segunda-imgresp.svg" alt="">
+  </section>
+
+  <section
+    class="flex justify-center lg:justify-end text-[#CDEDFF] 2xl:text-[48px] xl:text-[40px] lg:text-[35px] text-[23px]"
+    style="top: 0; position: absolute; z-index: 3; width: 100%; height: 100%; align-items: center;">
+    <div class="">
+      <p class="InterLight xl:w-[416px] w-[270px] lg:w-[340px] xl:mr-2 lg:mr-10">Aumenta tus posibilidades de venta de
+        forma
+        inmediata.</p>
+    </div>
+  </section>
+</section>
+<section class="h-[2000px] mt-[-18rem] 3xl:mt-[-23rem]"
+  style="background: linear-gradient(180deg, #1A1B1B 32.46%, #071D66 82%, #00239B 100%);">
+  <div class="relative">
+    <div class="flex justify-center text-white text-[48px] mt-44"
+      style="top: 0; position: absolute; z-index: 3; width: 100%; height: 100%;">
+      <div class="relative">
+        <div class="flex flex-col mt-20">
+          <div class="InterBold text-[#282C2D] 2xl:text-[118px] xl:text-[100px] lg:text-[90px] text-[45px]">
+            <p class="flex justify-center">Diagnóstico</p>
+            <p class="flex justify-center">CheckAuto</p>
+          </div>
+          <div class="hidden lg:block">
+            <img class="" src="assets/img/modelo-checkauto.svg" alt="">
+          </div>
+          <div class="lg:hidden block">
+            <img class="" src="assets/img/modelo-checkautoresp.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lg:block hidden absolute mt-[70rem] w-[100%]">
+    <div class="flex justify-between">
+      <div class="w-[50%] flex justify-center">
+        <app-formulario></app-formulario>
+      </div>
+      <div class="w-[50%] flex justify-center">
+        <div class="flex flex-col text-white ">
+          <div class="border-b-4 border-b-blue-300">
+            <p class="InterBold xl:text-[36px] lg:text-[30px]">¿Como evaluamos?</p>
+            <p class="InterLight xl:w-[484px] lg:w-[380px] xl:text-[18px] xl:mt-4 lg:mt-8 lg:text-[13px] mb-11">
+              Validamos el buen estado y uso de tu vehículo que es
+              calificado y
+              representado por
+              estrellas.
+            </p>
+          </div>
+          <div class="flex flex-col border-b border-b-blue-300">
+            <div class="flex flex-wrap mt-10">
+              <p class="InterBold absolute xl:text-[17px] lg:text-[15px]">Como nuevo</p>
+              <div class="w-[100%] flex  ml-60">
+                <img src="assets/img/puntuacion-5-estrellas.svg" alt="">
+              </div>
+            </div>
+            <p class="InterLight mt-3.5 mb-12 xl:text-[14px] lg:text-[12px]">Auto comparable a uno nuevo.</p>
+          </div>
+          <div class="flex flex-col border-b border-b-blue-300">
+            <div class="flex flex-wrap mt-10">
+              <p class="InterBold absolute xl:text-[17px] lg:text-[15px]">Muy bueno</p>
+              <div class="w-[100%] flex ml-60">
+                <img src="assets/img/puntuacion-4-estrellas.svg" alt="">
+              </div>
+            </div>
+            <p class="InterLight mt-3.5 mb-12 w-[420px] xl:text-[14px] lg:text-[12px]">Mecánica, electrónicamente y
+              chasís en buen estado.
+              Puede encontrarse
+              algun detalle
+              menor en chasís o interiores. </p>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex flex-wrap mt-10">
+              <p class="InterBold absolute xl:text-[17px] lg:text-[15px]">Aprobado</p>
+              <div class="w-[100%] flex ml-60">
+                <img src="assets/img/puntuacion-3-estrellas.svg" alt="">
+              </div>
+            </div>
+            <p class="InterLight mt-3.5 mb-12 w-[420px] xl:text-[14px] lg:text-[12px]">Mecánica y electrónicamente está
+              en buenas
+              condiciones. Pueden encontrarse
+              pequeños detalles en el chasís o interiores. </p>
+          </div>
+
+          <div class="w-[100%] bg-[#CDEDFF]" style="border-radius: 25px;">
+
+            <div class="flex justify-center mt-4 mb-4">
+              <div class="flex flex-wrap items-center">
+                <div class="">
+                  <i><img src="assets/img/icono-pequenho-car.svg" alt=""></i>
+                </div>
+
+                <div class="xl:w-[370px] lg:w-[320px] xl:text-[14px] lg:text-[12px] text-[#001662] ml-6">
+                  <p>* No colocamos autos que no aprueben nuestro <span><b>Diagnóstico CheckAuto.</b></span> Requisito
+                    mínimo de <span><b>3 estrellas.</b></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="block lg:hidden absolute mt-[70rem] w-[100%]">
+    <div class="flex flex-col-reverse">
+      <div class="w-[100%] flex justify-center">
+        <div class="w-[80%]">
+          <div class="flex flex-col text-white ">
+            <div class="border-b-4 border-b-blue-300">
+              <p class="InterBold xl:text-[36px] lg:text-[30px]">¿Como evaluamos?</p>
+              <p class="InterLight w-[270px] xl:text-[18px] mt-6 lg:text-[13px] mb-11">
+                Validamos el buen estado y uso de tu vehículo que es
+                calificado y
+                representado por
+                estrellas.
+              </p>
+            </div>
+            <div class="flex flex-col border-b border-b-blue-300">
+              <div class="flex flex-wrap mt-10">
+                <p class="InterBold absolute xl:text-[17px] lg:text-[15px]">Como nuevo</p>
+                <div class="w-[100%] flex  ml-60">
+                  <img src="assets/img/puntuacion-5-estrellas.svg" alt="">
+                </div>
+              </div>
+              <p class="InterLight mt-3.5 mb-12 text-[13px]">Auto comparable a uno nuevo.</p>
+            </div>
+            <div class="flex flex-col border-b border-b-blue-300">
+              <div class="flex flex-wrap mt-10">
+                <p class="InterBold absolute xl:text-[17px] lg:text-[15px]">Muy bueno</p>
+                <div class="w-[100%] flex ml-60">
+                  <img src="assets/img/puntuacion-4-estrellas.svg" alt="">
+                </div>
+              </div>
+              <p class="InterLight mt-3.5 mb-12 w-[270px] text-[13px]">Mecánica, electrónicamente y
+                chasís en buen estado.
+                Puede encontrarse
+                algun detalle
+                menor en chasís o interiores. </p>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex flex-wrap mt-10">
+                <p class="InterBold absolute xl:text-[17px] lg:text-[15px]">Aprobado</p>
+                <div class="w-[100%] flex ml-60">
+                  <img src="assets/img/puntuacion-3-estrellas.svg" alt="">
+                </div>
+              </div>
+              <p class="InterLight mt-3.5 mb-12 w-[270px] text-[13px]">Mecánica y electrónicamente está
+                en buenas
+                condiciones. Pueden encontrarse
+                pequeños detalles en el chasís o interiores. </p>
+            </div>
+
+            <div class="w-[100%] bg-[#CDEDFF]" style="border-radius: 25px;">
+
+              <div class="flex justify-center mt-4 mb-4">
+                <div class="flex flex-wrap items-center">
+                  <div class="ml-8">
+                    <i><img src="assets/img/icono-pequenho-car.svg" alt=""></i>
+                  </div>
+
+                  <div class="xl:w-[370px] lg:w-[320px] text-[11px] text-[#001662] ml-6">
+                    <p>* No colocamos autos que no aprueben nuestro <span><b>Diagnóstico CheckAuto.</b></span> Requisito
+                      mínimo de <span><b>3 estrellas.</b></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lg:hidden block mb-8">
+  <app-formulario>
+
+  </app-formulario>
+</section>
+
+<section class="lg:block hidden">
+  <section class="bg-[#00071F] flex justify-center ">
+    <div class="w-[90%]">
+      <div class="flex justify-center">
+
+        <div class="flex flex-col w-[100%]">
+          <div class=" border-b ">
+            <div class="flex justify-between mt-16 mb-8">
+              <div class="flex items-center">
+                <i><img src="assets/img/checkauto-footer.svg" alt=""></i>
+              </div>
+              <div class="flex flex-wrap items-center space-x-5">
+                <i><img src="assets/img/facebook 1.svg" alt=""></i>
+                <i><img src="assets/img/instagram 1.svg" alt=""></i>
+                <i><img src="assets/img/whatsapp 1.svg" alt=""></i>
+              </div>
+            </div>
+          </div>
+          <div>
+
+            <div class="text-white mb-9">
+              <div class="flex justify-between mt-16">
+                <div class="flex items-center">
+                  <p>© 2022 All rights reserved.</p>
+                </div>
+                <div class="flex items-center space-x-5">
+                  <p>Diseño y desarrollo por <span class="border-b">Esedor</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<section class="bg-[#00071F] flex justify-center  lg:hidden block">
+  <div class="w-[90%]">
+    <div class="flex justify-center">
+
+      <div class="flex flex-col w-[100%]">
+        <div class=" border-b ">
+          <div class="flex justify-center mt-16 mb-8">
+            <div class="flex  flex-col">
+              <div class="flex items-center">
+                <i><img src="assets/img/checkauto-footer.svg" alt=""></i>
+              </div>
+              <div class="flex justify-center mt-7">
+                <div class="flex flex-wrap items-center space-x-5">
+                  <i><img src="assets/img/facebook 1.svg" alt=""></i>
+                  <i><img src="assets/img/instagram 1.svg" alt=""></i>
+                  <i><img src="assets/img/whatsapp 1.svg" alt=""></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+
+          <div class="text-white mb-9" style="color: rgba(255, 255, 255, 0.5);;">
+            <div class="flex flex-col mt-10">
+              <div class="flex justify-center">
+                <p>© 2022 Untitled UI, All rights reserved..</p>
+              </div>
+              <div class="flex justify-center space-x-5 mt-7">
+                <p>Diseño y desarrollo por <span class="border-b">Esedor</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
