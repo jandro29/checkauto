@@ -1,3 +1,10 @@
+.cont-box-res{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 35, 155, 0.1);
+  border-radius: 25px;
+  color: #00239B;
+}
+
 .cont-box{
   background: #FFFFFF;
   box-shadow: 0px 4px 30px rgba(0, 35, 155, 0.1);
@@ -5,6 +12,7 @@
   cursor: pointer;
   color: #00239B;
 }
+
 
 .cont-box:hover{
   background: linear-gradient(180deg, #001E86 0%, #0557BB 53.65%, #009CFD 100%);;
