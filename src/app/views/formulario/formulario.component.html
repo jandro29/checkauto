@@ -60,11 +60,13 @@
             <div class="flex justify-center space-x-6"  style="width: 100%;">
               <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%]">
                 <mat-label>Año de fabricación</mat-label>
-                <input matInput placeholder="Año de fabricacion" value="">
+                <input type="date" matInput placeholder="Año de fabricacion" value="">
               </mat-form-field>
               <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%]">
                 <mat-label>Kilometraje</mat-label>
-                <input matInput placeholder="Kilometraje" value="">
+                <input type="tel" matInput #kilometro maxlength="6" placeholder="000.000Km">
+               <mat-hint align="start"><strong></strong> </mat-hint>
+              <mat-hint align="end">{{kilometro.value.length}} / 6</mat-hint>
               </mat-form-field>
             </div>
           </div>
@@ -72,10 +74,20 @@
           <div class="flex flex-wrap justify-center" style="width: 100%;">
             <div class="flex justify-center" style="width: 100%;">
               <form  class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[82%]">
-                <mat-form-field appearance="fill" style="width: 100%;">
-                  <mat-label>E-mail</mat-label>
-                  <input matInput placeholder="checkauto@example.com">
-                </mat-form-field>
+                <form>
+                  <mat-form-field appearance="fill" class="w-[100%]">
+                    <mat-label>E-mail</mat-label>
+                    <input appearance="fill" type="email" matInput [formControl]="emailFormControl"
+                      [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
+                    <mat-hint>Ingrese su E-mail</mat-hint>
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                      Por favor ingresa un E-mail valido
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                      El E-mail<strong> es necesario</strong>
+                    </mat-error>
+                  </mat-form-field>
+                </form>
               </form>
             </div>
           </div>
@@ -83,9 +95,11 @@
           <div class="flex flex-wrap justify-center" style="width: 100%;">
             <div class="flex justify-center" style="width: 100%;">
               <form class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[82%]">
-                <mat-form-field  appearance="fill" style="width: 100%;">
+                <mat-form-field appearance="fill" style="width: 100%;">
                   <mat-label>Celular</mat-label>
-                  <input matInput placeholder="Celular">
+                  <input type="tel" matInput #celular maxlength="9" placeholder="999 999 999">
+                 <mat-hint align="start"><strong></strong> </mat-hint>
+                <mat-hint align="end">{{celular.value.length}} / 9</mat-hint>
                 </mat-form-field>
               </form>
             </div>

@@ -17,13 +17,40 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import {MatChipsModule} from '@angular/material/chips';
+import { RouterModule, Routes } from '@angular/router';
+import {MatIconModule} from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MensajeComponent } from './views/mensaje/mensaje.component';
+
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '#',
+    pathMatch: 'full',
+  },
+  {
+    path: 'index',
+    component: IndexComponent,
+  },
+  {
+    path: 'mensaje',
+    component: MensajeComponent,
+  },
+  {
+    path: '**',
+    component: IndexComponent,
+  },
+]
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    FormularioComponent
+    FormularioComponent,
+    MensajeComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +60,10 @@ import {MatChipsModule} from '@angular/material/chips';
     MatButtonModule,
     MatButtonToggleModule,
     HttpClientModule,
-    MatChipsModule
+    MatChipsModule,
+    MatIconModule,
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
