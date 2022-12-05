@@ -11,20 +11,17 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './views/index/index.component';
 import { FormularioComponent } from './views/formulario/formulario.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import {MatChipsModule} from '@angular/material/chips';
-
+import { MatChipsModule } from '@angular/material/chips';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    IndexComponent,
-    FormularioComponent
-  ],
+  declarations: [AppComponent, IndexComponent, FormularioComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -33,7 +30,10 @@ import {MatChipsModule} from '@angular/material/chips';
     MatButtonModule,
     MatButtonToggleModule,
     HttpClientModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSnackBarModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
@@ -42,4 +42,4 @@ import {MatChipsModule} from '@angular/material/chips';
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
