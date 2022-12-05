@@ -54,11 +54,7 @@ export class FormularioComponent implements OnInit {
           this.contactForm.enable();
           this.contactForm.reset();
           this.resetForm();
-
-          this._snackBar.open('¡Listo! Hemos recibido tu mensaje.', 'Cerrar', {
-            horizontalPosition: 'center',
-            verticalPosition: 'top',
-          });
+          this.router.navigate(['/mensaje']);
         },
         (error) => {
           alert(
