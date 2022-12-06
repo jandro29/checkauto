@@ -5,12 +5,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-.btn-enviar{
+.btn-enviar {
   background: #001662;
 
 }
 
-.btn-enviar:hover{
+.btn-enviar:hover {
   background: #00239B;
 
+}
+
+.submit-btn {
+  width: 63%;
+  height: 60px;
+  background: #001662;
+  border-radius: 10px;
 }

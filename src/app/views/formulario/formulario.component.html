@@ -1,112 +1,185 @@
 <section>
   <div class="flex justify-center">
-    <div class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[90%] bg-[#FFFFFF]" style=" border-radius: 20px;">
+    <div
+      class="2xl:w-[60%] xl:w-[85%] lg:w-[80%] w-[100%] bg-[#FFFFFF]"
+      style="border-radius: 20px"
+    >
       <div class="hidden lg:block">
-        <p class="InterBold 3xl:text-[32px] 2xl:text-[28px] xl:text-[26px] lg:text-[20px] xl:h-[87px] lg:h-[60px]"
-          style="color: #00239B; width: 100%; display: flex; align-items: center; background: #FFFFFF; justify-content: center; border-radius: 20px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);" >
-          ¿Quieres vender tu auto?</p>
+        <p
+          class="InterBold 2xl:text-[32px] xl:text-[26px] lg:text-[20px] xl:h-[87px] lg:h-[60px] submit-btn"
+          style="
+            color: #00239b;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          "
+        >
+          ¿Quiere vender tu auto?
+        </p>
       </div>
-
 
       <div class="lg:hidden block">
-        <p class="InterBold mt-[2rem] text-[21px]"
-          style="color: #00239B; width: 100%; display: flex; align-items: center;; justify-content: center; border-radius: 20px;" >
-          ¿Quieres vender tu auto?</p>
+        <p
+          class="InterBold mt-24 text-[21px]"
+          style="
+            color: #00239b;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+          "
+        >
+          ¿Quiere vender tu auto?
+        </p>
       </div>
-      <div class="InterMedium flex flex-col ">
-
-        <div class="flex justify-center xl:mt-[15px] lg:mt-[10px] mt-[25px]">
-          <div class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[85%] 2xl:text-[18px] xl:text-[16px] lg:text-[12px] text-[13px] text-[#414141] ">
-            <p class="flex justify-center">Llena aquí tus datos, verifícalo con nosotros y ofrécelo a  precio de mercado.</p>
-            </div>
+      <div class="InterMedium flex flex-col">
+        <div class="flex justify-center xl:mt-[15px] lg:mt-[10px] mt-[10px]">
+          <div
+            class="2xl:w-[60%] xl:w-[75%] lg:w-[80%] w-[60%] xl:text-[18px] lg:text-[15px] text-[13px] text-[#414141]"
+          >
+            <p>
+              Llena aquí tus datos, verifícalo con nosotros y ofrécelo a  precio
+              de mercado.
+            </p>
+          </div>
         </div>
-
 
         <div class="flex justify-center mt-[11px]">
-          <div class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[85%] xl:text-[12.5px] lg:text-[8.5px] text-[12.5px] text-[#98ADF6]">
-            <span><em>* Para un llenado efectivo recomendamos tener tu tarjeta de propiedad a la mano.</em></span>
+          <div
+            class="2xl:w-[60%] xl:w-[75%] lg:w-[80%] w-[60%] xl:text-[12.5px] lg:text-[9.5px] text-[12.5px] text-[#757F89]"
+          >
+            <span
+              ><em
+                >* Para un llenado efectivo recomendamos tener tu Tarjeta de
+                Propiedad a la mano</em
+              ></span
+            >
           </div>
         </div>
       </div>
 
-      <div class="InterMedium 3xl:mt-10 2xl:mt-5 xl:mt-4 lg:mt-4 mt-5">
-        <form>
+      <div class="InterMedium 2xl:mt-10 xl:mt-4 lg:mt-4 mt-5">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <div class="flex flex-wrap justify-center xl:space-x-5 lg:space-x-2">
-            <div class="flex justify-center space-x-6"  style="width: 100%;">
-              <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%] ">
-                <mat-label >Marca</mat-label>
-                <input matInput placeholder="Marca" value="">
+            <div class="flex justify-center space-x-6" style="width: 100%">
+              <mat-form-field
+                appearance="fill"
+                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+              >
+                <mat-label>Marca</mat-label>
+                <input matInput placeholder="Marca" formControlName="marca" />
               </mat-form-field>
 
-
-              <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%]">
+              <mat-form-field
+                appearance="fill"
+                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+              >
                 <mat-label>Modelo</mat-label>
-                <input matInput placeholder="Modelo" value="">
+                <input matInput placeholder="Modelo" formControlName="modelo" />
               </mat-form-field>
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-center" style="width: 100%;">
-            <div class="flex justify-center" style="width: 100%;">
-              <form class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[82%]">
-                <mat-form-field appearance="fill" style="width: 100%;">
+          <div class="flex flex-wrap justify-center" style="width: 100%">
+            <div class="flex justify-center" style="width: 100%">
+              <div class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+                <mat-form-field appearance="fill" style="width: 100%">
                   <mat-label>Versión</mat-label>
-                  <input matInput placeholder="Versión">
+                  <input
+                    matInput
+                    placeholder="Versión"
+                    formControlName="version"
+                  />
                 </mat-form-field>
-              </form>
+              </div>
             </div>
           </div>
 
           <div class="flex flex-wrap justify-center">
-            <div class="flex justify-center space-x-6"  style="width: 100%;">
-              <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%]">
+            <div class="flex justify-center space-x-6" style="width: 100%">
+              <mat-form-field
+                appearance="fill"
+                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+              >
                 <mat-label>Año de fabricación</mat-label>
-                <input type="number" matInput placeholder="Año de fabricacion" value="">
+                <input
+                  matInput
+                  placeholder="Año de fabricacion"
+                  formControlName="anio_fab"
+                  maxlength="4"
+                  (keypress)="keyPress($event)"
+                />
               </mat-form-field>
-              <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%]">
+              <mat-form-field
+                appearance="fill"
+                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+              >
                 <mat-label>Kilometraje</mat-label>
-                <input type="tel" matInput #kilometro maxlength="6" placeholder="000.000Km">
-               <mat-hint align="start"><strong></strong> </mat-hint>
-              <mat-hint align="end">{{kilometro.value.length}} / 6</mat-hint>
+                <input
+                  matInput
+                  placeholder="Kilometraje"
+                  formControlName="kilometraje"
+                />
               </mat-form-field>
             </div>
           </div>
 
-          <div class="flex flex-wrap justify-center" style="width: 100%;">
-            <div class="flex justify-center" style="width: 100%;">
-              <form  class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[82%]">
-                <form>
-                  <mat-form-field appearance="fill" class="w-[100%]">
-                    <mat-label>E-mail</mat-label>
-                    <input appearance="fill" type="email" matInput [formControl]="emailFormControl"
-                      [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
-                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                      Por favor ingresa un E-mail valido
-                    </mat-error>
-                    <mat-error *ngIf="emailFormControl.hasError('required')">
-                      El E-mail<strong> es necesario</strong>
-                    </mat-error>
-                  </mat-form-field>
-                </form>
-              </form>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap justify-center" style="width: 100%;">
-            <div class="flex justify-center" style="width: 100%;">
-              <form class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[82%]">
-                <mat-form-field appearance="fill" style="width: 100%;">
-                  <mat-label>Celular</mat-label>
-                  <input type="tel" matInput #celular maxlength="9" placeholder="999 999 999">
-                 <mat-hint align="start"><strong></strong> </mat-hint>
-                <mat-hint align="end">{{celular.value.length}} / 9</mat-hint>
+          <div class="flex flex-wrap justify-center" style="width: 100%">
+            <div class="flex justify-center" style="width: 100%">
+              <div class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+                <mat-form-field appearance="fill" style="width: 100%">
+                  <mat-label>E-mail</mat-label>
+                  <input
+                    matInput
+                    placeholder="checkauto@example.com"
+                    formControlName="email"
+                  />
                 </mat-form-field>
-              </form>
+              </div>
             </div>
           </div>
 
-          <div class=" flex justify-center 2xl:mb-14 xl:mb-10 lg:mb-8 xl:mt-8 lg:mt-5 mt-5">
-            <button class="btn-enviar 3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[80%]" style=" height: 60px; border-radius: 10px;" mat-flat-button color="primary">Enviar</button>
+          <div class="flex flex-wrap justify-center" style="width: 100%">
+            <div class="flex justify-center" style="width: 100%">
+              <div class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+                <mat-form-field appearance="fill" style="width: 100%">
+                  <mat-label>Celular</mat-label>
+                  <input
+                    matInput
+                    maxlength="9"
+                    placeholder="Celular"
+                    formControlName="celular"
+                    (keypress)="keyPress($event)"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center xl:mb-14 lg:mb-8">
+            <button
+              *ngIf="formLoading"
+              class="submit-btn"
+              mat-flat-button
+              color="primary"
+              disabled
+            >
+              Espere...
+            </button>
+            <button
+              *ngIf="!formLoading"
+              type="submit"
+              class="submit-btn"
+              mat-flat-button
+              color="primary"
+            >
+              Enviar
+            </button>
           </div>
         </form>
       </div>
