@@ -21,6 +21,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MensajeComponent } from './views/mensaje/mensaje.component';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 const routes: Routes = [
@@ -63,7 +65,8 @@ const routes: Routes = [
     MatChipsModule,
     MatIconModule,
     RouterModule.forRoot(routes),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatNativeDateModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },

@@ -1,6 +1,6 @@
 <section>
   <div class="flex justify-center">
-    <div class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[100%] bg-[#FFFFFF]" style=" border-radius: 20px;">
+    <div class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[90%] bg-[#FFFFFF]" style=" border-radius: 20px;">
       <div class="hidden lg:block">
         <p class="InterBold 3xl:text-[32px] 2xl:text-[28px] xl:text-[26px] lg:text-[20px] xl:h-[87px] lg:h-[60px]"
           style="color: #00239B; width: 100%; display: flex; align-items: center; background: #FFFFFF; justify-content: center; border-radius: 20px; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);" >
@@ -9,7 +9,7 @@
 
 
       <div class="lg:hidden block">
-        <p class="InterBold mt-[4.5rem] text-[21px]"
+        <p class="InterBold mt-[2rem] text-[21px]"
           style="color: #00239B; width: 100%; display: flex; align-items: center;; justify-content: center; border-radius: 20px;" >
           ¿Quieres vender tu auto?</p>
       </div>
@@ -61,7 +61,7 @@
             <div class="flex justify-center space-x-6"  style="width: 100%;">
               <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%]">
                 <mat-label>Año de fabricación</mat-label>
-                <input type="date" matInput placeholder="Año de fabricacion" value="">
+                <input type="number" matInput placeholder="Año de fabricacion" value="">
               </mat-form-field>
               <mat-form-field appearance="fill" class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[38%]">
                 <mat-label>Kilometraje</mat-label>
@@ -80,7 +80,6 @@
                     <mat-label>E-mail</mat-label>
                     <input appearance="fill" type="email" matInput [formControl]="emailFormControl"
                       [errorStateMatcher]="matcher" placeholder="Ex. pat@example.com">
-                    <mat-hint>Ingrese su E-mail</mat-hint>
                     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                       Por favor ingresa un E-mail valido
                     </mat-error>
@@ -106,8 +105,8 @@
             </div>
           </div>
 
-          <div class="flex justify-center 2xl:mb-14 xl:mb-10 lg:mb-8 xl:mt-8 lg:mt-5">
-            <button class="3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[80%]" style=" height: 60px; background: #001662; border-radius: 10px;" mat-flat-button color="primary">Enviar</button>
+          <div class=" flex justify-center 2xl:mb-14 xl:mb-10 lg:mb-8 xl:mt-8 lg:mt-5 mt-5">
+            <button class="btn-enviar 3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[80%]" style=" height: 60px; border-radius: 10px;" mat-flat-button color="primary">Enviar</button>
           </div>
         </form>
       </div>
