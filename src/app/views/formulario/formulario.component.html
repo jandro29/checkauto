@@ -1,7 +1,7 @@
 <section>
   <div class="flex justify-center">
     <div
-      class="2xl:w-[60%] xl:w-[85%] lg:w-[80%] w-[100%] bg-[#FFFFFF]"
+      class="2xl:w-[90%] xl:w-[90%] lg:w-[90%] w-[90%] bg-[#FFFFFF]"
       style="border-radius: 20px"
     >
       <div class="hidden lg:block">
@@ -24,7 +24,7 @@
 
       <div class="lg:hidden block">
         <p
-          class="InterBold mt-24 text-[21px]"
+          class="InterBold mt-8 text-[21px]"
           style="
             color: #00239b;
             width: 100%;
@@ -38,9 +38,9 @@
         </p>
       </div>
       <div class="InterMedium flex flex-col">
-        <div class="flex justify-center xl:mt-[15px] lg:mt-[10px] mt-[10px]">
+        <div class="flex justify-center xl:mt-[15px] lg:mt-[10px] mt-[10px] ">
           <div
-            class="2xl:w-[60%] xl:w-[75%] lg:w-[80%] w-[60%] xl:text-[18px] lg:text-[15px] text-[13px] text-[#414141]"
+            class="2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[80%] xl:text-[18px] lg:text-[15px] text-[13px] text-[#414141]"
           >
             <p>
               Llena aquí tus datos, verifícalo con nosotros y ofrécelo a  precio
@@ -51,7 +51,7 @@
 
         <div class="flex justify-center mt-[11px]">
           <div
-            class="2xl:w-[60%] xl:w-[75%] lg:w-[80%] w-[60%] xl:text-[12.5px] lg:text-[9.5px] text-[12.5px] text-[#757F89]"
+            class="2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[80%] xl:text-[12.5px] lg:text-[9.5px] text-[12.5px] text-[#757F89]"
           >
             <span
               ><em
@@ -69,7 +69,7 @@
             <div class="flex justify-center space-x-6" style="width: 100%">
               <mat-form-field
                 appearance="fill"
-                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[43%]"
               >
                 <mat-label>Marca</mat-label>
                 <input matInput placeholder="Marca" formControlName="marca" />
@@ -77,7 +77,7 @@
 
               <mat-form-field
                 appearance="fill"
-                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[43%]"
               >
                 <mat-label>Modelo</mat-label>
                 <input matInput placeholder="Modelo" formControlName="modelo" />
@@ -87,7 +87,7 @@
 
           <div class="flex flex-wrap justify-center" style="width: 100%">
             <div class="flex justify-center" style="width: 100%">
-              <div class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+              <div class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[93%]">
                 <mat-form-field appearance="fill" style="width: 100%">
                   <mat-label>Versión</mat-label>
                   <input
@@ -104,7 +104,7 @@
             <div class="flex justify-center space-x-6" style="width: 100%">
               <mat-form-field
                 appearance="fill"
-                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[43%]"
               >
                 <mat-label>Año de fabricación</mat-label>
                 <input
@@ -117,13 +117,15 @@
               </mat-form-field>
               <mat-form-field
                 appearance="fill"
-                class="2xl:w-[30%] xl:w-[35%] lg:w-[38%] w-[30%]"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] w-[43%]"
               >
                 <mat-label>Kilometraje</mat-label>
                 <input
                   matInput
                   placeholder="Kilometraje"
                   formControlName="kilometraje"
+                  maxlength="15"
+                  (keypress)="keyPress($event)"
                 />
               </mat-form-field>
             </div>
@@ -131,7 +133,7 @@
 
           <div class="flex flex-wrap justify-center" style="width: 100%">
             <div class="flex justify-center" style="width: 100%">
-              <div class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+              <div class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[93%]">
                 <mat-form-field appearance="fill" style="width: 100%">
                   <mat-label>E-mail</mat-label>
                   <input
@@ -146,7 +148,7 @@
 
           <div class="flex flex-wrap justify-center" style="width: 100%">
             <div class="flex justify-center" style="width: 100%">
-              <div class="2xl:w-[64%] xl:w-[75%] lg:w-[82%] w-[66%]">
+              <div class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[93%]">
                 <mat-form-field appearance="fill" style="width: 100%">
                   <mat-label>Celular</mat-label>
                   <input
