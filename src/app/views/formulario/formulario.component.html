@@ -1,0 +1,194 @@
+<section>
+  <div class="flex justify-center">
+    <div
+      class="2xl:w-[100%] xl:w-[100%] lg:w-[100%] w-[90%] bg-[#FFFFFF]"
+      style="border-radius: 20px; z-index: 20;"
+    >
+      <div class="hidden lg:block">
+        <p
+          class="InterBold 2xl:text-[26px] xl:text-[22px] lg:text-[20px] xl:h-[50px] lg:h-[45px]"
+          style="
+            color: #00239b;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          "
+        >
+          ¿Quieres vender tu auto?
+        </p>
+      </div>
+
+      <div class="lg:hidden block">
+        <p
+          class="InterBold mt-8 text-[21px]"
+          style="
+            color: #00239b;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+          "
+        >
+          ¿Quieres vender tu auto?
+        </p>
+      </div>
+      <div class="InterMedium flex flex-col">
+        <div class="flex justify-center xl:mt-[12px] lg:mt-[8px] mt-[10px] ">
+          <div
+            class="2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[80%] 2xl:text-[17px] xl:text-[16.5px] lg:text-[15.5px] text-[13px] text-[#414141]"
+          >
+            <p>
+              Llena aquí tus datos, verifícalo con nosotros y ofrécelo a  precio
+              de mercado.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-[11px]">
+          <div
+            class="2xl:w-[80%] xl:w-[80%] lg:w-[80%] w-[80%] 2xl:text-[13.5px] xl:text-[12.5px] lg:text-[11.5px] text-[11.5px] text-[#757F89] " style="color:#98ADF6;"
+          >
+            <span
+              ><em
+                >* Para un llenado efectivo recomendamos tener tu tarjeta de
+                propiedad a la mano</em
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="InterMedium 2xl:mt-4 xl:mt-4 lg:mt-4 mt-5">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="flex flex-wrap justify-center xl:space-x-5 lg:space-x-2">
+            <div class="flex justify-center space-x-6" style="width: 100%">
+              <mat-form-field
+                appearance="fill"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] md:w-[45%] w-[43%]"
+              >
+                <mat-label>Marca</mat-label>
+                <input matInput placeholder="Marca" formControlName="marca" />
+              </mat-form-field>
+
+              <mat-form-field
+                appearance="fill"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%]  md:w-[45%] w-[43%]"
+              >
+                <mat-label>Modelo</mat-label>
+                <input matInput placeholder="Modelo" formControlName="modelo" />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center" style="width: 100%">
+            <div class="flex justify-center" style="width: 100%">
+              <div class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[93%]">
+                <mat-form-field appearance="fill" style="width: 100%">
+                  <mat-label>Versión</mat-label>
+                  <input
+                    matInput
+                    placeholder="Versión"
+                    formControlName="version"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center">
+            <div class="flex justify-center space-x-6" style="width: 100%">
+              <mat-form-field
+                appearance="fill"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] md:w-[45%] w-[43%]"
+              >
+                <mat-label>Año de fabricación</mat-label>
+                <input
+                type="tel"
+                  matInput
+                  placeholder="Año de fabricacion"
+                  formControlName="anio_fab"
+                  maxlength="4"
+                  (keypress)="keyPress($event)"
+                />
+              </mat-form-field>
+              <mat-form-field
+                appearance="fill"
+                class="3xl:w-[38%] 2xl:w-[38%] xl:w-[38%] lg:w-[38%] md:w-[45%] w-[43%]"
+              >
+                <mat-label>Kilometraje</mat-label>
+                <input
+                  matInput
+                  type="tel"
+                  placeholder="Kilometraje"
+                  formControlName="kilometraje"
+                  maxlength="15"
+                  (keypress)="keyPress($event)"
+                />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center" style="width: 100%">
+            <div class="flex justify-center" style="width: 100%">
+              <div class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[93%]">
+                <mat-form-field appearance="fill" style="width: 100%">
+                  <mat-label>E-mail</mat-label>
+                  <input
+                    matInput
+                    placeholder="checkauto@example.com"
+                    formControlName="email"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center" style="width: 100%">
+            <div class="flex justify-center" style="width: 100%">
+              <div class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[93%]">
+                <mat-form-field appearance="fill" style="width: 100%">
+                  <mat-label>Celular</mat-label>
+                  <input
+                    matInput
+                    maxlength="9"
+                    placeholder="Celular"
+                    formControlName="celular"
+                    (keypress)="keyPress($event)"
+                  />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center  xl:mb-8 mt-12 lg:mt-2 lg:mb-6 w-[100%]">
+            <div class="3xl:w-[80%]  2xl:w-[80%] xl:w-[80%] lg:w-[82%] w-[93%]">
+            <button
+              *ngIf="formLoading"
+              class="submit-btn"
+              mat-flat-button
+              color="primary"
+              disabled
+            >
+              Espere...
+            </button>
+            <button
+              *ngIf="!formLoading"
+              type="submit"
+              class="submit-btn"
+              mat-flat-button
+              color="primary"
+            >
+              ENVIAR
+            </button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
