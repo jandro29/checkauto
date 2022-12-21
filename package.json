@@ -6,6 +6,7 @@
     "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh": "ng build --base-href=/docs/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
