@@ -29,7 +29,6 @@ const routes: Routes = [
     path: '',
     redirectTo: '#',
     pathMatch: 'full',
-    component: IndexComponent
   },
   {
     path: 'index',
